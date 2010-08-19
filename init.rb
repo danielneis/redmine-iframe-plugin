@@ -1,13 +1,13 @@
 require 'redmine'
 
-Redmine::Plugin.register :redmine_lit_npd do
-  name 'Redmine Lit Npd plugin'
+Redmine::Plugin.register :redmine_sag_setic do
+  name 'Redmine SAG plugin'
   author 'Daniel Neis'
-  description 'This is a plugin for embed LIT into Redmine'
+  description 'This is a tool that embeds SAG into Redmine'
   version '0.0.1'
-  url 'http://redmine.npd.ufsc.br'
+  url ''
   author_url ''
 
-  permission :lit, {:lit => [:index]}, :public => true
-  menu :project_menu, :lit, { :controller => 'lit', :action => 'index' }, :caption => 'LIT', :last => true
+  permission :sag, {:sag => [:index]}, :public => true
+  menu :project_menu, :sag, { :controller => 'sag', :action => 'index' }, :caption => 'SAG', :last => true
 end

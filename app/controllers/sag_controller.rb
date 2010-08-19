@@ -1,4 +1,4 @@
-class LitController < ApplicationController
+class SagController < ApplicationController
   unloadable
 
   def index
