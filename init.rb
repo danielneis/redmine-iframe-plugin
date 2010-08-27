@@ -1,6 +1,6 @@
 require 'redmine'
 
-Redmine::Plugin.register :redmine_sag_setic do
+Redmine::Plugin.register :redmine_sag do
   name 'Redmine SAG plugin'
   author 'Daniel Neis'
   description 'This is a tool that embeds SAG into Redmine'
@@ -8,6 +8,9 @@ Redmine::Plugin.register :redmine_sag_setic do
   url ''
   author_url ''
 
+  settings :default => { 'lit_url' => "" }, :partial => 'settings/settings'
+
   permission :sag, {:sag => [:index]}, :public => true
+
   menu :project_menu, :sag, { :controller => 'sag', :action => 'index' }, :caption => 'SAG', :last => true
 end

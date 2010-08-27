@@ -1,9 +1,9 @@
 <% content_for :header_tags do %>
-    <%= stylesheet_link_tag 'sag', :plugin => 'redmine_sag_setic' %>
+ <%= stylesheet_link_tag 'sag', :plugin => 'redmine_sag' %>
 <% end %>
 
 <h2>Sistema de apoio ao gerenciamento</h2>
 
-<iframe src="http://150.162.9.69/~daniel/lit_npd" >
+<iframe src="<%= @lit_url %>">
 <p>Your browser does not support iframes.</p>
 </iframe>
