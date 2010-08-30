@@ -1,0 +1,9 @@
+<% content_for :header_tags do %>
+ <%= stylesheet_link_tag 'iframe', :plugin => 'redmine_iframe' %>
+<% end %>
+
+<%= '<h2>' + @title + '</h2>' unless @title.empty? %>
+
+<iframe src="<%= @source_url %>">
+<p>Your browser does not support iframes.</p>
+</iframe>
