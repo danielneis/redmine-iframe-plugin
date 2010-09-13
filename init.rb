@@ -16,7 +16,7 @@ Redmine::Plugin.register :redmine_iframe do
 
   config.to_prepare do
       menu :project_menu, :iframe, { :controller => 'iframe', :action => 'index' },\
-           :caption => Setting.plugin_redmine_iframe['tab_caption'], :last => true
+           :caption => Setting.plugin_redmine_iframe['tab_caption'], :last => true, :param => :project_id
   end
 
 end
