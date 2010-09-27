@@ -4,6 +4,6 @@
 
 <%= '<h2>' + @title + '</h2>' unless @title.empty? %>
 
-<iframe src="<%= @source_url %>">
+<iframe src="<%= @source_url %>?project_id=<%= @project_id %>">
 <p>Your browser does not support iframes.</p>
 </iframe>
